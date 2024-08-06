@@ -13,8 +13,15 @@ export default function Header() {
     <div className='flex items-center justify-between py-4'>
         <Link to={'/'}><img src={logo} alt="" /></Link>
 
+        <div className='gap-52 hidden md:flex'>
+        <Link to={'/'} className='text-textBody'>Home</Link>
+        <Link to={'/products'} className='text-textBody'>Produtos</Link>
+        <Link to={'/about-us'} className='text-textBody'>Sobre nós</Link>
+        </div>
+
+
         <DropdownMenu>
-          <DropdownMenuTrigger><Menu className='size-8'/></DropdownMenuTrigger>
+          <DropdownMenuTrigger><Menu className='size-8 md:hidden'/></DropdownMenuTrigger>
           <DropdownMenuContent className='bg-backgroundColor'>
             <DropdownMenuItem className='text-textBody'>
               <Link to={'/'}>Home</Link>

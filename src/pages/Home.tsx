@@ -16,27 +16,41 @@ import Blur from "@/components/Blur";
 
 
 function Home() {
-
   return (
     <div>
       <Header/>
-      <div className="flex flex-col items-center gap-3 mb-20">
-        <h1 className="text-3xl font-header">Organize sua saúde com a <span className="text-h1Color">caixa inteligente</span></h1>
-        <p className="font-body z-10 text-textBody text-center text-sm">Descubra como tornamos a gestão de medicamentos mais fácil, segura e independente</p>
-        <Blur className={'top-72'}/>
-        <Button placeholder='Saiba mais'/>
-        <div className="z-30 flex">
-        <img src={PhoneBox} alt="" />
+      <div className="flex flex-col items-center gap-3 mb-20 md:flex-row md:items-center">
+        <div className="flex flex-col items-center md:w-max md:gap-10 md:justify-between md:items-start">
+          <h1 className="text-3xl font-header md:text-6xl">Organize sua saúde com a <span className="text-h1Color">caixa inteligente</span></h1>
+          <p className="font-body z-10 text-textBody text-center text-sm md:text-xl md:text-start md:w-80">Descubra como tornamos a gestão de medicamentos mais fácil, segura e independente</p>
+          <Button placeholder='Saiba mais'/>
         </div>
+
+        <div className="z-30 flex">
+          <img src={PhoneBox} alt="" className="w-[1000px]"/>
+        </div>
+        
+        <Blur className={'top-72'}/>
       </div>
 
-      <div className="flex flex-col items-center gap-4 mb-16">
-        <h2 className="text-2xl font-header">Não deixe que sua visão atrapalhe o dia a dia</h2>
-        <p className="text-textBody text-sm">A caixa que vem para fazer com que você não se esqueça dos seus remédios e nem os tome errado</p>
+      <div className="mb-16">
+        {window.innerWidth > 768 ? (
+          <div>
+            <h2 className="text-2xl font-header md:text-4xl">Não deixe que sua visão atrapalhe o dia a dia</h2>
+            <p className="text-textBody text-sm md:text-xl">A caixa que vem para fazer com que você não se esqueça dos seus remédios e nem os tome errado</p>
+            <CardHome/>
+            <img src={GirlPhone} alt="" />
+          </div>
+        ) : (
+          <div className="flex flex-col items-center gap-4 ">
+            <h2 className="text-2xl font-header">Não deixe que sua visão atrapalhe o dia a dia</h2>
+            <p className="text-textBody text-sm">A caixa que vem para fazer com que você não se esqueça dos seus remédios e nem os tome errado</p>
+            <img src={GirlPhone} alt="" />
+            <CardHome/>
+          </div>
+        )}
 
         <Blur className={'top-[700px]'}/>
-        <img src={GirlPhone} alt="" />
-        <CardHome/>
       </div>
 
       <div className="flex flex-col items-center gap-3 mb-16">

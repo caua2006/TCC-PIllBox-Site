@@ -10,10 +10,10 @@ import { Link } from 'react-router-dom'
 
 export default function Footer() {
   return (
-    <div className='flex flex-col items-center'>
-        <div className='flex flex-col items-center gap-3 justify-center mb-4'>
+    <div className='flex flex-col items-center md:items-start '>
+        <div className='flex flex-col items-center gap-3 justify-center mb-4 md:flex-row md:justify-center md:mb-20 md:gap-10'>
           <Link to={'/'}>
-          <img src={logo} alt="" className='ml-5'/>
+            <img src={logo} alt="" className='ml-5 md:ml-0'/>
           </Link>
 
           <div className='flex gap-10 items-center justify-center'>
@@ -23,17 +23,19 @@ export default function Footer() {
           
         </div>
 
-        <div className='flex gap-7 flex-wrap w-40 justify-center items-center mb-4'>
-            <img src={Facebook} alt="" />
-            <img src={Instagram} alt="" />
-            <img src={Linkedin} alt="" />
-            <img src={Youtube} alt="" />
-            <img src={Twitter} alt="" />
-        </div>
+        <div className='mb-14 md:flex md:items-center md:w-full md:justify-around'>
+          <div className='flex gap-7 flex-wrap w-40 justify-center items-center mb-4 md:flex-row md:w-fit md:mb-0'>
+              <img src={Facebook} alt="" />
+              <img src={Instagram} alt="" />
+              <img src={Linkedin} alt="" />
+              <img src={Youtube} alt="" />
+              <img src={Twitter} alt="" />
+          </div>
 
-        <div className='flex flex-col items-center gap-4 mb-14'>
-          <img src={AppleStore} alt="" />
-          <img src={PlayStore} alt="" />
+          <div className='flex flex-col items-center gap-4  md:flex-row'>
+            <img src={AppleStore} alt="" />
+            <img src={PlayStore} alt="" />
+          </div>
         </div>
     </div>
   )
