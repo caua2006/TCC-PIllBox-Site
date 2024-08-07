@@ -35,7 +35,7 @@ export default function App() {
     }
   ])
   return (
-    <div className="bg-backgroundColor h-full px-8">
+    <div className="bg-backgroundColor h-full px-8 xl:flex xl:justify-center ">
       <RouterProvider router={router} />
     </div>
   )
