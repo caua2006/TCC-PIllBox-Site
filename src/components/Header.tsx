@@ -10,7 +10,7 @@ import { Link } from 'react-router-dom'
 
 export default function Header() {
   return (
-    <div className='flex items-center justify-between py-4'>
+    <div className='flex items-center justify-between py-4 '>
         <Link to={'/'}><img src={logo} alt="" /></Link>
 
         <div className='gap-52 hidden md:flex'>

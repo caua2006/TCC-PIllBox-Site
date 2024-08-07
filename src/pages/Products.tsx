@@ -11,25 +11,29 @@ export default function Products() {
     <div>
 
         <Header/>
-        <main className="flex flex-col items-center mb-10 gap-10">
-          <h1 className="font-header text-3xl text-h1Color mb-8">Produtos</h1>
+        <main className="flex flex-col items-center mb-10 gap-10 md:mt-10">
+          <h1 className="font-header text-3xl text-h1Color mb-8 md:text-6xl">Produtos</h1>
           
-          <div className="flex flex-col items-center gap-5">
-            <img src={BoxImg} alt="" className="mr-3"/>
-            <h2 className="font-header text-2xl text-h1Color">PillBox</h2>
-            <p className="text-center text-textBody">A caixa de remédios inteligente complementa o aplicativo, proporcionando uma experiência completa e integrada</p>
-            <Link to={'/pillbox'}>
-                <Button placeholder={'Saiba mais'}/>
-            </Link>
+          <div className="flex flex-col items-center gap-5 md:flex md:flex-row md:mb-10">
+            <img src={BoxImg} alt="" className="mr-3 md:w-[450px]"/>
+            <div className="md:flex md:flex-col md:items-center md:w-[600px] md:gap-6">
+              <h2 className="font-header text-2xl text-h1Color md:text-5xl">PillBox</h2>
+              <p className="text-center text-textBody md:text-base">A caixa de remédios inteligente complementa o aplicativo, proporcionando uma experiência completa e integrada</p>
+              <Link to={'/pillbox'}>
+                  <Button placeholder={'Saiba mais'}/>
+              </Link>
+            </div>
           </div>
           
-          <div className="flex flex-col items-center gap-5">
-            <img src={AppImg} alt="" />
-            <h2 className="font-header text-2xl text-h1Color">PillBox - App</h2>
-            <p className="text-center text-textBody">O aplicativo foi criado para ser um assistente confiável e fácil de usar, com funcionalidades especialmente desenhadas para atender às necessidades de pessoas cegas</p>
-            <Link to={'/pillboxapp'}>
-                <Button placeholder={'Saiba mais'}/>
-            </Link>
+          <div className="flex flex-col items-center gap-5 md:flex md:flex-row">
+            <img src={AppImg} alt="" className="md:w-[450px]"/>
+            <div className="md:flex md:flex-col md:items-center md:w-[600px] md:gap-6">
+              <h2 className="font-header text-2xl text-h1Color md:text-5xl">PillBox - App</h2>
+              <p className="text-center text-textBody md:text-base">O aplicativo foi criado para ser um assistente confiável e fácil de usar, com funcionalidades especialmente desenhadas para atender às necessidades de pessoas cegas</p>
+              <Link to={'/pillboxapp'}>
+                  <Button placeholder={'Saiba mais'}/>
+              </Link>
+            </div>
           </div>
         </main>
         <Footer/>
