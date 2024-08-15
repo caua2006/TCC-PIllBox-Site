@@ -75,7 +75,7 @@ function AboutUs() {
           </div>
 
           <section className="flex justify-center">
-          <div className="bg-gradient-to-b from-blue-500 to-cyan-500 pt-8 pb-10 px-8 mb-28 md:bg-gradient-to-br md:from-gradienteLeft md:via-linearColor1 md:via-80% md:to-linearColor1 md:flex md:flex-col md:items-center md:justify-center md:w-[1150px] md:h-[680px]">
+          <div className="bg-gradient-to-b from-blue-500 to-cyan-500 pt-8 pb-10 px-8 mb-28 md:bg-gradient-to-br md:from-gradienteLeft md:via-linearColor1 md:via-80% md:to-linearColor1 md:flex md:flex-col md:items-center md:justify-center md:w-[1150px] md:h-[680px] max-w-[900px]">
           <h1 className="text-2xl font-header text-white text-center mb-2 md:text-6xl md:mb-8 md:mt-5">Fale conosco</h1>
           <form>
               <div className="flex flex-col mb-5 md:w-[650px] md:flex md:flex-col md:justify-center">

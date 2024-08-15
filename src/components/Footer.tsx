@@ -10,15 +10,20 @@ import { Link } from 'react-router-dom'
 
 export default function Footer() {
   return (
-    <div className='flex flex-col items-center md:items-start '>
+    <div className='flex flex-col items-center md:items-start z-50'>
         <div className='flex flex-col items-center gap-3 justify-center mb-4 md:flex-row md:justify-center md:mb-20 md:gap-10'>
           <Link to={'/'}>
             <img src={logo} alt="" className='ml-5 md:ml-0'/>
           </Link>
 
           <div className='flex gap-10 items-center justify-center'>
-            <p className='text-textBody text-center'>Produtos</p>
+            <Link to={'/products'}>
+              <p className='text-textBody text-center'>Produtos</p>
+            </Link>
+            
+            <Link to={'/about-us'}>
             <p className='text-textBody text-center'>Sobre nós</p>
+            </Link>
           </div>
           
         </div>

@@ -24,7 +24,7 @@ export default function Products() {
                   <Button placeholder={'Saiba mais'}/>
               </Link>
             </div>
-            <Blur className={'top-[150px] right-20 md:top-[250px] md:left-48'}/>
+            <Blur className={'top-[150px] right-20 md:top-[200px] md:left-[400px]'}/>
           </div>
           
           <div className="flex flex-col items-center gap-5 md:flex md:flex-row">
@@ -36,7 +36,7 @@ export default function Products() {
                   <Button placeholder={'Saiba mais'}/>
               </Link>
             </div>
-            <Blur className={'top-[600px] right-20 md:top-[750px] md:left-48'}/>
+            <Blur className={'top-[600px] right-20 md:top-[600px] md:left-[400px]'}/>
           </div>
         </main>
         <Footer/>
