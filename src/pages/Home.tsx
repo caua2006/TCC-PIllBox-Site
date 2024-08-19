@@ -30,7 +30,7 @@ function Home() {
           <img src={PhoneBox} alt="" className="w-[1000px]"/>
         </div>
         
-        <Blur className={'top-72 md:right-32 xl:right-96'}/>
+        <Blur className={'top-72 md:right-[20%]'}/>
       </div>
 
       <div className="mb-16 text-center">
@@ -52,7 +52,7 @@ function Home() {
           </div>
         )}
 
-        <Blur className={'top-[700px] right-20 md:top-[950px] md:right-32 xl:right-96'}/>
+        <Blur className={'top-[700px] right-20 md:top-[950px] md:right-[20%]'}/>
       </div>
 
       <div className="flex flex-col items-center gap-3 mb-16 md:flex-row-reverse md:mb-32 md:justify-center">
@@ -65,7 +65,7 @@ function Home() {
           <Button placeholder={'Baixe agora'}/>
         </div>
         <img src={MobileAppImg} alt="" className="w-[600px] z-30"/>
-        <Blur className={'top-[2250px] md:top-[1500px] xl:left-[500px] md:left-32'}/>
+        <Blur className={'top-[2250px] md:top-[1500px] md:left-[20%]'}/>
       </div>
 
       <div className="flex flex-col items-center gap-3 mb-16 md:flex-row md:justify-center">

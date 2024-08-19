@@ -8,6 +8,8 @@ import Blur from "@/components/Blur";
 
 
 export default function Products() {
+
+  
   return (
     <div>
 
@@ -24,7 +26,7 @@ export default function Products() {
                   <Button placeholder={'Saiba mais'}/>
               </Link>
             </div>
-            <Blur className={'top-[150px] right-20 md:top-[200px] md:left-[400px]'}/>
+            <Blur className={'top-[150px] right-20 md:top-[250px] md:left-[20%]'}/>
           </div>
           
           <div className="flex flex-col items-center gap-5 md:flex md:flex-row">
@@ -36,7 +38,7 @@ export default function Products() {
                   <Button placeholder={'Saiba mais'}/>
               </Link>
             </div>
-            <Blur className={'top-[600px] right-20 md:top-[600px] md:left-[400px]'}/>
+            <Blur className={'top-[600px] right-20 md:top-[650px] md:left-[20%]'}/>
           </div>
         </main>
         <Footer/>
