@@ -2,7 +2,7 @@ import Button from "@/components/Button";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import { Link } from "react-router-dom";
-import BoxImg from '/pillbox-img.svg'
+import BoxImg from '/pillbox-model.png'
 import AppImg from '/mobile-img.svg'
 import Blur from "@/components/Blur";
 

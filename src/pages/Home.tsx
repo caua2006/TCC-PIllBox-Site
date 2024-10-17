@@ -11,6 +11,7 @@ import PhoneBox from '/phone-box.svg'
 import MobileAppImg from '/mobile-img.svg'
 import BannerPillbox from '/banner-pillbox.svg'
 import GirlPhone from '/girl-phone.svg'
+import RealPillbox from '/real-pillbox.svg'
 import Blur from "@/components/Blur";
 
 
@@ -27,7 +28,7 @@ function Home() {
         </div>
 
         <div className="z-30 flex">
-          <img src={PhoneBox} alt="" className="w-[1000px]"/>
+          <img src={RealPillbox} alt="" className="w-[1000px]"/>
         </div>
         
         <Blur className={'top-72 md:right-[20%]'}/>
