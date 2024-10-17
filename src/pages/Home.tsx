@@ -7,7 +7,7 @@ import Footer from "@/components/Footer";
 // import BgBlur from '/bg-blur.svg'
 
 
-import PhoneBox from '/phone-box.svg'
+// import PhoneBox from '/phone-box.svg'
 import MobileAppImg from '/mobile-img.svg'
 import BannerPillbox from '/banner-pillbox.svg'
 import GirlPhone from '/girl-phone.svg'
