@@ -29,12 +29,24 @@ export default function Products() {
             <Blur className={'top-[150px] right-20 md:top-[250px] md:left-[20%]'}/>
           </div>
           
-          <div className="flex flex-col items-center gap-5 md:flex md:flex-row">
+          <div className="flex flex-col items-center mb-20 gap-5 md:flex md:flex-row">
             <img src={AppImg} alt="" className="md:w-[450px] z-30"/>
             <div className="flex flex-col items-center md:w-[600px] gap-6">
               <h2 className="font-header text-2xl text-h1Color md:text-5xl">PillBox - App</h2>
               <p className="text-center text-textBody md:text-base">O aplicativo foi criado para ser um assistente confiável e fácil de usar, com funcionalidades especialmente desenhadas para atender às necessidades de pessoas cegas</p>
               <Link to={'/pillboxapp'}>
+                  <Button placeholder={'Saiba mais'}/>
+              </Link>
+            </div>
+            <Blur className={'top-[600px] right-20 md:top-[650px] md:left-[20%]'}/>
+          </div>
+
+          <div className="flex flex-col items-center gap-5 md:flex md:flex-row">
+            <img src="https://i.ytimg.com/vi/RuNU8Z7hpdU/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAWkvh68nif1aBp8OxuMZTr9LqUhA" alt="" className="md:w-[450px] z-30 "/>
+            <div className="flex flex-col items-center md:w-[600px] gap-6">
+              <h2 className="font-header text-2xl text-h1Color md:text-5xl">Jogo</h2>
+              <p className="text-center text-textBody md:text-base">O aplicativo foi criado para ser um assistente confiável e fácil de usar, com funcionalidades especialmente desenhadas para atender às necessidades de pessoas cegas</p>
+              <Link to={'/game'}>
                   <Button placeholder={'Saiba mais'}/>
               </Link>
             </div>

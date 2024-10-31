@@ -8,6 +8,7 @@ import PillBox from "./pages/PillBox";
 import AboutUs from "./pages/AboutUs";
 import Products from "./pages/Products";
 import PillBoxApp from "./pages/PillBoxApp";
+import Game from "./pages/Game";
 
 
 
@@ -32,6 +33,10 @@ export default function App() {
     {
       path: '/pillboxapp',
       element: <PillBoxApp/>
+    },
+    {
+      path: '/game',
+      element: <Game/>
     }
   ])
   return (
