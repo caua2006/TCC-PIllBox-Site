@@ -15,7 +15,7 @@ function AboutUs() {
   return (
     <div>
         <Header/>
-        <main className="flex flex-col items-center">
+        <main className="flex flex-col items-center mt-16">
           <div className="flex flex-col items-center gap-4 mb-12 mt-7 md:mb-40">
             <div className="md:w-[900px] items-center flex flex-col ">
             <h1 className="text-3xl font-header text-h1Color md:text-6xl md:mb-8">Sobre nós</h1>

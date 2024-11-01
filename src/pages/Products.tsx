@@ -14,7 +14,7 @@ export default function Products() {
     <div>
 
         <Header/>
-        <main className="flex flex-col items-center mb-10 gap-10 md:mt-10">
+        <main className="flex flex-col items-center mb-10 gap-10 mt-[90px]">
           <h1 className="font-header text-3xl text-h1Color mb-8 md:text-6xl">Produtos</h1>
           
           <div className="flex flex-col items-center gap-5 md:flex md:flex-row md:mb-10">
@@ -26,7 +26,7 @@ export default function Products() {
                   <Button placeholder={'Saiba mais'}/>
               </Link>
             </div>
-            <Blur className={'top-[150px] right-20 md:top-[250px] md:left-[20%]'}/>
+            <Blur className={'top-[200px] right-20 md:top-[250px] md:left-[20%]'}/>
           </div>
           
           <div className="flex flex-col items-center mb-20 gap-5 md:flex md:flex-row">
@@ -38,10 +38,10 @@ export default function Products() {
                   <Button placeholder={'Saiba mais'}/>
               </Link>
             </div>
-            <Blur className={'top-[600px] right-20 md:top-[650px] md:left-[20%]'}/>
+            <Blur className={'top-[670px] right-20 md:top-[650px] md:left-[20%]'}/>
           </div>
 
-          <div className="flex flex-col items-center gap-5 md:flex md:flex-row">
+          {/* <div className="flex flex-col items-center gap-5 md:flex md:flex-row">
             <img src="https://i.ytimg.com/vi/RuNU8Z7hpdU/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAWkvh68nif1aBp8OxuMZTr9LqUhA" alt="" className="md:w-[450px] z-30 "/>
             <div className="flex flex-col items-center md:w-[600px] gap-6">
               <h2 className="font-header text-2xl text-h1Color md:text-5xl">Jogo</h2>
@@ -51,7 +51,7 @@ export default function Products() {
               </Link>
             </div>
             <Blur className={'top-[600px] right-20 md:top-[650px] md:left-[20%]'}/>
-          </div>
+          </div> */}
         </main>
         <Footer/>
     </div>

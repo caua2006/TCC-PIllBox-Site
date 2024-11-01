@@ -33,7 +33,7 @@ export default function Footer() {
               <img src={Facebook} alt="" />
               <img src={Instagram} alt="" />
               <img src={Linkedin} alt="" />
-              <img src={Youtube} alt="" />
+              <Link to={'https://www.youtube.com/@Pillbox-tcc'} target='_blank'><img src={Youtube} alt="" /></Link>
               <img src={Twitter} alt="" />
           </div>
 

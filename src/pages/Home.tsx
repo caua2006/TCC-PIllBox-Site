@@ -18,7 +18,7 @@ import Blur from "@/components/Blur";
 
 function Home() {
   return (
-    <div id="top" className="md:max-w-[1240px]">
+    <div id="top" className="md:max-w-[1240px] bg-backgroundColor md:mt-[-40px] mt-[90px]">
       <Header/>
       <div className="flex flex-col items-center gap-3 mb-20 md:flex-row md:items-center md:mt-32 md:mb-40">
         <div className="flex flex-col items-center md:w-max md:gap-10 md:justify-between md:items-start gap-5">
