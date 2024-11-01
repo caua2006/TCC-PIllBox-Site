@@ -58,7 +58,7 @@ export default function PillBoxApp() {
         </SheetContent>
     </Sheet>
 
-    <main className="md:flex">
+    <main className="md:flex mt-20">
             <div className="md:fixed md:max-w-64 hidden md:block">
                 <div className="flex flex-col items-start gap-1 mb-1">
                     <p className="text-h1Color">1 - PillBoxApp - Introdução</p>

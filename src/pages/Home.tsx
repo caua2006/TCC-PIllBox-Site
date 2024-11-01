@@ -22,7 +22,7 @@ function Home() {
       <Header/>
       <div className="flex flex-col items-center gap-3 mb-20 md:flex-row md:items-center md:mt-32 md:mb-40">
         <div className="flex flex-col items-center md:w-max md:gap-10 md:justify-between md:items-start gap-5">
-          <h1 className="text-3xl font-header md:text-6xl">Organize sua saúde com a <span className="text-h1Color">caixa inteligente</span></h1>
+          <h1 className="text-3xl font-header md:text-5xl">Não deixe que sua visão atrapalhe o <span className="text-h1Color">dia a dia</span></h1>
           <p className="font-body z-10 text-textBody text-center text-sm md:text-xl md:text-start md:w-80">Descubra como tornamos a gestão de medicamentos mais fácil, segura e independente</p>
           <Button placeholder='Saiba mais'/>
         </div>
@@ -38,7 +38,7 @@ function Home() {
         {window.innerWidth > 768 ? (
           <div className="md:flex md:items-center md:justify-center">
             <div className="flex flex-wrap gap-6 w-[650px]">
-            <h2 className="text-2xl font-header md:text-4xl">Não deixe que sua visão atrapalhe o dia a dia</h2>
+            <h2 className="text-2xl font-header md:text-4xl">Organize sua saúde com a <span className="text-h1Color">caixa inteligente</span></h2>
             <p className="text-textBody text-sm md:text-xl font-body">A caixa que vem para fazer com que você não se esqueça dos seus remédios e nem os tome errado</p>
             <CardHome/>
             </div>
