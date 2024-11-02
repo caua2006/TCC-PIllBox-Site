@@ -7,11 +7,10 @@ export default function Game() {
         <Header/>
 
         <main className="flex flex-col items-center gap-20  mb-72 md:mb-20 mt-[90px]">
-            <h1 className="font-header text-3xl text-h1Color mb-4 md:text-6xl">Game</h1>
-            <iframe className="w-[280px] h-[157px] md:w-[560px] md:h-[315px]"  src="https://www.youtube.com/embed/oFtjKbXKqbg?si=rnmaUB9aeY5_vFvn" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
-
+            <h1 className="font-header text-3xl text-h1Color mb-4 md:text-6xl">Wish Tower</h1>
+            <iframe className="w-[280px] h-[157px] md:w-[560px] md:h-[315px]"  src="https://www.youtube.com/embed/zYSF6I1M05U?si=VjaQYKzqnOcJj0rt" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe>
         </main>
-
+        
         <Footer/>
     </div>
   )

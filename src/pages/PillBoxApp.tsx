@@ -16,6 +16,7 @@ export default function PillBoxApp() {
   return (
     <div>
     <Header/>
+    <div className="mt-[90px] bg-backgroundColor w-full">
     <Sheet>
         <SheetTrigger>
             <div className="flex items-center md:hidden">
@@ -43,7 +44,6 @@ export default function PillBoxApp() {
                     <p className="text-h1Color">3- O Aplicativo</p>
                     <p className="text-textBody">Interface acessível</p>
                     <p className="text-textBody">Lembretes personalizáveis</p>
-                    <p className="text-textBody">Notificações multimodais</p>
                     <p className="text-textBody">Histórico de medicação</p>
                 </div>
                 <div className="flex flex-col items-start gap-1 mb-1">
@@ -52,13 +52,13 @@ export default function PillBoxApp() {
                     <p className="text-textBody">Prototipagem</p>
                     <p className="text-textBody">Componentes utilizados</p>
                     <p className="text-textBody">Testes com usuários</p>
-                    <p className="text-textBody">Refinamento e produção final</p>
                 </div>
             </div>
         </SheetContent>
     </Sheet>
+    </div>
 
-    <main className="md:flex mt-20">
+    <main className="md:flex ">
             <div className="md:fixed md:max-w-64 hidden md:block">
                 <div className="flex flex-col items-start gap-1 mb-1">
                     <p className="text-h1Color">1 - PillBoxApp - Introdução</p>
@@ -76,13 +76,12 @@ export default function PillBoxApp() {
                     <p className="text-textBody">Sincronização automática</p>
                     <p className="text-textBody">Alertas multimodais</p>
                     <p className="text-textBody">Feedback em tempo real</p>
-                    <p className="text-textBody">Assistência por voz</p>
                 </div>
                 <div className="flex flex-col items-start gap-1 mb-1">
                     <p className="text-h1Color">4 - Como o App foi criado</p>
                     <p className="text-textBody">Tecnologias utilizadas</p>
                     <p className="text-textBody">Banco de Dados</p>
-                    <p className="text-textBody">Conexões e sincronização</p>
+                    <p className="text-textBody">Conexões</p>
                 </div>
             </div>
 
@@ -106,14 +105,11 @@ export default function PillBoxApp() {
                         <img src={PlayStore} alt="" />
                     </div>
                     <h2 className="text-2xl font-header text-h1Color">Configuração inicial</h2>
-                    <p className="text-textBody">-Siga as instruções na tela para configurar seu perfil e preferências de uso. <br />
-                    - Conecte o aplicativo à Caixa de Remédios Inteligente via Bluetooth, seguindo as instruções de emparelhamento.</p>
+                    <p className="text-textBody">- Conecte o aplicativo à Caixa de Remédios Inteligente via Bluetooth, seguindo as instruções de emparelhamento.</p>
                     <h2 className="text-2xl font-header text-h1Color">Cadastro de medicamentos</h2>
-                    <p className="text-textBody">- Utilize o leitor de código de barras do aplicativo para adicionar seus medicamentos à lista. <br />
-                    - Insira manualmente os horários e doses recomendadas ou importe essas informações de uma prescrição digital.</p>
+                    <p className="text-textBody">- Insira manualmente os horários e doses recomendadas usando os quatro compartimentos disponíveis, feitos para uma dose diária organizada.</p>
                     <h2 className="text-2xl font-header text-h1Color">Configuração de lembretes</h2>
-                    <p className="text-textBody">Defina os horários e frequência de medicação no aplicativo. <br />
-                    Personalize os tipos de notificações que você deseja receber (sonoras, vibrações, etc.).</p>
+                    <p className="text-textBody">Defina os horários e frequência de medicação no aplicativo, de um modo fácil e intuitivo para o deficiente visual.</p>
                     <div className="w-full bg-bgCard h-0.5"></div>
                 </div>
 
@@ -126,8 +122,6 @@ export default function PillBoxApp() {
                     <p className="text-textBody">Receba alertas no seu smartphone e na caixa, garantindo que você nunca perca uma dose da medicação.</p>
                     <h2 className="text-2xl font-header text-h1Color">Feedback em tempo real</h2>
                     <p className="text-textBody">Quando você abre um compartimento na caixa, o aplicativo registra automaticamente a retirada do medicamento, atualizando seu histórico.</p>
-                    <h2 className="text-2xl font-header text-h1Color">Assistência por voz</h2>
-                    <p className="text-textBody">Utilize comandos de voz para configurar lembretes e verificar informações sobre seus medicamentos.</p>
                     <div className="w-full bg-bgCard h-0.5"></div>
                 </div>
 
@@ -135,14 +129,11 @@ export default function PillBoxApp() {
                     <h1 className="text-3xl font-header text-h1Color">4 - Como o App foi criado</h1>
                     <p className="text-textBody">O aplicativo foi desenvolvido utilizando tecnologias avançadas para garantir robustez, segurança e acessibilidade:</p>
                     <h2 className="text-2xl font-header text-h1Color">Tecnologias utilizadas</h2>
-                    <p className="text-textBody">Linguagens de Programação: Swift (iOS) e Kotlin (Android) para garantir desempenho nativo e otimizado.
-                    Frameworks: Utilização de frameworks, como Flutter, para criar uma interface de usuário acessível e intuitiva.</p>
+                    <p className="text-textBody">MIT App Inventor: Plataforma de desenvolvimento no-code que permite a criação de aplicativos Android de forma visual e intuitiva, sem necessidade de conhecimento profundo em programação.</p>
                     <h2 className="text-2xl font-header text-h1Color">Banco de Dados</h2>
-                    <p className="text-textBody">Firebase: Para armazenamento seguro e em tempo real das informações dos usuários e histórico de medicação.
-                    SQLite: Banco de dados local no dispositivo para garantir acesso rápido às informações críticas.</p>
-                    <h2 className="text-2xl font-header text-h1Color">Conexões e sincronização</h2>
-                    <p className="text-textBody">Bluetooth Low Energy (BLE): Conexão eficiente e de baixa energia entre o aplicativo e a Caixa de Remédios Inteligente.
-                    APIs RESTful: Comunicação segura e eficiente com servidores remotos, permitindo atualizações de software e sincronização de dados.</p>
+                    <p className="text-textBody">EEPROM: Armazenamento local na memória do Arduino para garantir o salvamento dos dados mesmo quando o dispositivo é desligado.</p>
+                    <h2 className="text-2xl font-header text-h1Color">Conexões</h2>
+                    <p className="text-textBody">Módulo Bluetooth HC-05: Responsável pela comunicação sem fio entre o aplicativo e a Caixa de Remédios Inteligente, permitindo o envio e recebimento de dados de forma simples e eficiente.</p>
                     <div className="w-full bg-bgCard h-0.5"></div>
                 </div>
 
