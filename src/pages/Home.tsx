@@ -13,6 +13,7 @@ import BannerPillbox from '/banner-pillbox.svg'
 import GirlPhone from '/girl-phone.svg'
 import RealPillbox from '/real-pillbox.svg'
 import Blur from "@/components/Blur";
+import { Link } from "react-router-dom";
 
 
 
@@ -24,7 +25,9 @@ function Home() {
         <div className="flex flex-col items-center md:w-max md:gap-10 md:justify-between md:items-start gap-5">
           <h1 className="text-3xl font-header md:text-5xl">Não deixe que sua visão atrapalhe o <span className="text-h1Color">dia a dia</span></h1>
           <p className="font-body z-10 text-textBody text-center text-sm md:text-xl md:text-start md:w-80">Descubra como tornamos a gestão de medicamentos mais fácil, segura e independente</p>
-          <Button placeholder='Saiba mais'/>
+          <Link to={'/products'} className="z-50">
+            <Button placeholder='Saiba mais'/>
+          </Link>
         </div>
 
         <div className="z-30 flex">
@@ -63,7 +66,9 @@ function Home() {
             <br /> <br />
             Nós acreditamos que todos merecem a tranquilidade de cuidar da saúde de maneira autônoma e independente. É por isso que apresentamos o inovador aplicativo para caixas de remédios, especialmente desenvolvido para pessoas cegas.
           </p>
-          <Button placeholder={'Baixe agora'}/>
+          <Link to={'/pillboxapp'} className="z-50 mt-4 md:mt-0">
+            <Button placeholder={'Baixe agora'}/>
+          </Link>
         </div>
         <img src={MobileAppImg} alt="" className="w-[600px] z-30"/>
         <Blur className={'top-[2250px] md:top-[1500px] md:left-[20%]'}/>
@@ -73,7 +78,9 @@ function Home() {
         <div className="flex flex-col items-center md:w-[600px] md:gap-5">
           <h2 className="text-2xl font-header text-h1Color md:text-4xl">Quem somos </h2>
           <p className="text-textBody text-center text-sm md:text-base">Somos um grupo diversificado de profissionais dedicados a transformar a maneira como pessoas cegas e com baixa visão gerenciam sua saúde. Nossa equipe é composta por especialistas em tecnologia, saúde e acessibilidade, unidos por um objetivo comum: promover a autonomia e a inclusão através da inovação.</p>
-          <Button placeholder={'Saiba mais'}/>
+          <Link to={'/about-us'} className="mt-4 md:mt-0">
+            <Button placeholder={'Saiba mais'}/>
+          </Link>
         </div>
         <img src={BannerPillbox} alt="" className="z-20 md:w-[550px] "/>
       </div>

@@ -23,12 +23,12 @@ export default function App() {
       element: <AboutUs/>
     },
     {
-      path: '/pillbox',
-      element: <PillBox/>
-    },
-    {
       path: '/products',
       element: <Products/>
+    },
+    {
+      path: '/pillbox',
+      element: <PillBox/>
     },
     {
       path: '/pillboxapp',
